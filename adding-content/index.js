@@ -1,4 +1,9 @@
-import { showBoundingRect, showRectsOnScreen, clearRects, clearRectsWithDelay } from "../../demo-overlays/demo-overlays.js";
+import {
+  showBoundingRect,
+  showRectsOnScreen,
+  clearRects,
+  clearRectsWithDelay,
+} from "../../demo-overlays/demo-overlays.js";
 window.ctDebug = true;
 
 const queryString = window.location.search;
@@ -18,7 +23,7 @@ const nativeObserver = new PerformanceObserver((v) => {
   });
 });
 
-nativeObserver.observe({ type: "container"});
+nativeObserver.observe({ type: "container" });
 
 window.setTimeout(() => {
   const innerContainer = document.querySelector(".container div");

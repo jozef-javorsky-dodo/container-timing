@@ -1,4 +1,9 @@
-import { showBoundingRect, showRectsOnScreen, clearRects, clearRectsWithDelay } from "../../demo-overlays/demo-overlays.js";
+import {
+  showBoundingRect,
+  showRectsOnScreen,
+  clearRects,
+  clearRectsWithDelay,
+} from "../../demo-overlays/demo-overlays.js";
 window.ctDebug = true;
 
 const observer = new PerformanceObserver((list) => {
